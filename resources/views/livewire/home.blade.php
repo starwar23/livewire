@@ -44,21 +44,21 @@
                 <!-- Single Banner Start -->
                 <div class="col-sm-4">
                     <div class="single-banner zoom">
-                        <a href="#"><img src="img/banner/3.jpg" alt="slider-banner"></a>
+                        <a href="#"><img src="img/banner-images/3.jpg" alt="slider-banner"></a>
                     </div>
                 </div>
                 <!-- Single Banner End -->
                 <!-- Single Banner Start -->
                 <div class="col-sm-4">
                     <div class="single-banner zoom">
-                        <a href="#"><img src="img/banner/4.jpg" alt="slider-banner"></a>
+                        <a href="#"><img src="img/banner-images/4.jpg" alt="slider-banner"></a>
                     </div>
                 </div>
                 <!-- Single Banner End -->
                 <!-- Single Banner Start -->
                 <div class="col-sm-4">
                     <div class="single-banner zoom">
-                        <a href="#"><img src="img/banner/5.jpg" alt="slider-banner"></a>
+                        <a href="#"><img src="img/banner-images/5.jpg" alt="slider-banner"></a>
                     </div>
                 </div>
                 <!-- Single Banner End -->
@@ -284,14 +284,14 @@
                 <!-- Single Banner Start -->
                 <div class="col-sm-6">
                     <div class="single-banner zoom">
-                        <a href="#"><img src="img/banner/1.png" alt="slider-banner"></a>
+                        <a href="#"><img src="img/banner-images/1.png" alt="slider-banner"></a>
                     </div>
                 </div>
                 <!-- Single Banner End -->
                 <!-- Single Banner Start -->
                 <div class="col-sm-6">
                     <div class="single-banner zoom">
-                        <a href="#"><img src="img/banner/2.png" alt="slider-banner"></a>
+                        <a href="#"><img src="img/banner-images/2.png" alt="slider-banner"></a>
                     </div>
                 </div>
                 <!-- Single Banner End -->
@@ -1015,7 +1015,7 @@
                         </div>
                         <!-- Tab-Content End -->
                         <div class="single-banner zoom mt-30 ">
-                            <a href="#"><img src="/img/banner/tab-banner.jpg" alt="slider-banner"></a>
+                            <a href="#"><img src="/img/banner-images/tab-banner.jpg" alt="slider-banner"></a>
                         </div>
                     </div>
                     <!-- New Pro Content End -->
