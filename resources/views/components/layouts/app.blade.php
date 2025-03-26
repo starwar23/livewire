@@ -163,9 +163,13 @@
                                     <ul>
                                         <li><a href="compare.html"><i class="fa fa-cog"></i></a>
                                             <ul class="ht-dropdown">
-                                                <li><a href="/login" wire:navigate>Авторизоваться</a></li>
-                                                <li><a href="">Регистрация</a></li>
-                                                <li><a href="">Профиль</a></li>
+                                                @if(!\Illuminate\Support\Facades\Auth::check())
+                                                    <li><a href="/login" wire:navigate>Авторизоваться</a></li>
+                                                    <li><a href="/register" wire:navigate>Регистрация</a></li>
+                                                @endif
+                                                @if(\Illuminate\Support\Facades\Auth::check())
+                                                    <li><a href="">Профиль</a></li>
+                                                @endif
                                             </ul>
                                         </li>
                                         <li><a href=""><i class="fa fa-heart-o"></i></a></li>
