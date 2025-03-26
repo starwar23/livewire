@@ -169,6 +169,7 @@
                                                 @endif
                                                 @if(\Illuminate\Support\Facades\Auth::check())
                                                     <li><a href="">Профиль</a></li>
+                                                    <livewire:logout />
                                                 @endif
                                             </ul>
                                         </li>
