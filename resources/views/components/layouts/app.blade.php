@@ -9,6 +9,8 @@
         <!-- place favicon.ico in the root directory -->
         <link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.png">
         <!-- Google Font css -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
 
         <!-- mobile menu css -->
