@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\Attributes\Title;
 
@@ -21,7 +22,9 @@ class Register extends Component
             'password' => ['required', 'min:6', 'confirmed']
         ]);
 
-        User::query()->create($validated);
+        $user = User::query()->create($validated);
+
+        Auth::loginUsingId($user->id);
 
         $this->redirect('/');
     }

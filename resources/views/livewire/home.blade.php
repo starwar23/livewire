@@ -72,204 +72,65 @@
     <div class="best-seller-product pb-30">
         <div class="container">
             <div class="group-title">
-                <h2>Hand Tool</h2>
+                <h2>Распродажа</h2>
             </div>
             <!-- Best Product Activation Start -->
             <div class="hand-tool-active owl-carousel">
                 <!-- Single Product Start -->
-                <div class="single-product">
-                    <!-- Product Image Start -->
-                    <div class="pro-img">
-                        <a href="product.html">
-                            <img class="primary-img" src="img/products/7.jpg" alt="single-product">
-                            <img class="secondary-img" src="img/products/8.jpg" alt="single-product">
-                        </a>
-                    </div>
-                    <!-- Product Image End -->
-                    <!-- Product Content Start -->
-                    <div class="pro-content">
-                        <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                @foreach($sale_products as $sale_product)
+                    <div class="single-product">
+                        <!-- Product Image Start -->
+                        <div class="pro-img">
+                            <a href="product.html">
+                                <img class="primary-img" src="img/products/7.jpg" alt="single-product">
+                                <img class="secondary-img" src="img/products/8.jpg" alt="single-product">
+                            </a>
                         </div>
-                        <h4><a href="product.html">Products Name Here</a></h4>
-                        <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        <div class="pro-actions">
-                            <div class="actions-secondary">
-                                <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
-                                <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
+                        <!-- Product Image End -->
+                        <!-- Product Content Start -->
+                        <div class="pro-content">
+                            <div class="product-rating">
+                                @switch($sale_product->rating)
+                                    @case(1)
+                                        <i class="fa fa-star"></i>
+                                        @break
+                                    @case(2)
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        @break
+                                    @case(3)
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        @break
+                                    @case(4)
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        @break
+                                    @case(5)
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        @break
+                                @endswitch
+                            </div>
+                            <h4><a href="product.html">{{$sale_product->title}}</a></h4>
+                            <p><span class="price">$30.00</span><del class="prev-price">${{$sale_product->price}}</del></p>
+                            <div class="pro-actions">
+                                <div class="actions-secondary">
+                                    <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
+                                    <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
+                                    <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
+                                </div>
                             </div>
                         </div>
+                        <!-- Product Content End -->
                     </div>
-                    <!-- Product Content End -->
-                </div>
-                <!-- Single Product End -->
-                <!-- Single Product Start -->
-                <div class="single-product">
-                    <!-- Product Image Start -->
-                    <div class="pro-img">
-                        <a href="product.html">
-                            <img class="primary-img" src="img/products/5.jpg" alt="single-product">
-                            <img class="secondary-img" src="img/products/6.jpg" alt="single-product">
-                        </a>
-                    </div>
-                    <!-- Product Image End -->
-                    <!-- Product Content Start -->
-                    <div class="pro-content">
-                        <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h4><a href="product.html">Products Name Here</a></h4>
-                        <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        <div class="pro-actions">
-                            <div class="actions-secondary">
-                                <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
-                                <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Product Content End -->
-                    <span class="sticker-new">-30%</span>
-                </div>
-                <!-- Single Product End -->
-                <!-- Single Product Start -->
-                <div class="single-product">
-                    <!-- Product Image Start -->
-                    <div class="pro-img">
-                        <a href="product.html">
-                            <img class="primary-img" src="img/products/4.jpg" alt="single-product">
-                            <img class="secondary-img" src="img/products/3.jpg" alt="single-product">
-                        </a>
-                    </div>
-                    <!-- Product Image End -->
-                    <!-- Product Content Start -->
-                    <div class="pro-content">
-                        <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h4><a href="product.html">Products Name Here</a></h4>
-                        <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        <div class="pro-actions">
-                            <div class="actions-secondary">
-                                <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
-                                <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Product Content End -->
-                </div>
-                <!-- Single Product End -->
-                <!-- Single Product Start -->
-                <div class="single-product">
-                    <!-- Product Image Start -->
-                    <div class="pro-img">
-                        <a href="product.html">
-                            <img class="primary-img" src="img/products/2.jpg" alt="single-product">
-                            <img class="secondary-img" src="img/products/1.jpg" alt="single-product">
-                        </a>
-                    </div>
-                    <!-- Product Image End -->
-                    <!-- Product Content Start -->
-                    <div class="pro-content">
-                        <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h4><a href="product.html">Products Name Here</a></h4>
-                        <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        <div class="pro-actions">
-                            <div class="actions-secondary">
-                                <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
-                                <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Product Content End -->
-                    <span class="sticker-new">-30%</span>
-                </div>
-                <!-- Single Product End -->
-                <!-- Single Product Start -->
-                <div class="single-product">
-                    <!-- Product Image Start -->
-                    <div class="pro-img">
-                        <a href="product.html">
-                            <img class="primary-img" src="img/products/3.jpg" alt="single-product">
-                            <img class="secondary-img" src="img/products/4.jpg" alt="single-product">
-                        </a>
-                    </div>
-                    <!-- Product Image End -->
-                    <!-- Product Content Start -->
-                    <div class="pro-content">
-                        <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h4><a href="product.html">Products Name Here</a></h4>
-                        <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        <div class="pro-actions">
-                            <div class="actions-secondary">
-                                <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
-                                <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Product Content End -->
-                </div>
-                <!-- Single Product End -->
-                <!-- Single Product Start -->
-                <div class="single-product">
-                    <!-- Product Image Start -->
-                    <div class="pro-img">
-                        <a href="product.html">
-                            <img class="primary-img" src="img/products/5.jpg" alt="single-product">
-                            <img class="secondary-img" src="img/products/6.jpg" alt="single-product">
-                        </a>
-                    </div>
-                    <!-- Product Image End -->
-                    <!-- Product Content Start -->
-                    <div class="pro-content">
-                        <div class="product-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h4><a href="product.html">Products Name Here</a></h4>
-                        <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        <div class="pro-actions">
-                            <div class="actions-secondary">
-                                <a href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa fa-heart"></i></a>
-                                <a class="add-cart" href="cart.html" data-toggle="tooltip" title="Add to Cart">Add To Cart</a>
-                                <a href="compare.html" data-toggle="tooltip" title="Add to Compare"><i class="fa fa-signal"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Product Content End -->
-                    <span class="sticker-new">-30%</span>
-                </div>
+                @endforeach
                 <!-- Single Product End -->
             </div>
             <!-- Best Product Activation End -->
@@ -1086,260 +947,6 @@
         </div>
     </div>
     <!-- Company Policy End -->
-    <!-- Best Products Start -->
-    <div class="best-seller-product pb-50 pb-sm-40">
-        <div class="container">
-            <div class="group-title">
-                <h2>Best Seller Products</h2>
-            </div>
-            <!-- Best Product Activation Start -->
-            <div class="best-seller-pro-active  owl-carousel slider-right-content">
-                <!-- Double Product Start -->
-                <div class="double-pro">
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/1.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/2.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$150.00</span><del class="prev-price">$200.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                </div>
-                <!-- Double Product End -->
-                <!-- Double Product Start -->
-                <div class="double-pro">
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/3.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/4.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$150.00</span><del class="prev-price">$200.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                </div>
-                <!-- Double Product End -->
-                <!-- Double Product Start -->
-                <div class="double-pro">
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/5.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/6.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$150.00</span><del class="prev-price">$200.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                </div>
-                <!-- Double Product End -->
-                <!-- Double Product Start -->
-                <div class="double-pro">
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/7.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/8.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$150.00</span><del class="prev-price">$200.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                </div>
-                <!-- Double Product End -->
-                <!-- Double Product Start -->
-                <div class="double-pro">
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/5.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/6.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$150.00</span><del class="prev-price">$200.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                </div>
-                <!-- Double Product End -->
-                <!-- Double Product Start -->
-                <div class="double-pro">
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/7.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$30.00</span><del class="prev-price">$32.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                    <!-- Single Product Start -->
-                    <div class="single-product">
-                        <div class="pro-img">
-                            <a href="product.html"><img class="img" src="img/products/8.jpg" alt="product-image"></a>
-                        </div>
-                        <div class="pro-content">
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <h4><a href="product.html">Products Name Here</a></h4>
-                            <p><span class="price">$150.00</span><del class="prev-price">$200.00</del></p>
-                        </div>
-                    </div>
-                    <!-- Single Product End -->
-                </div>
-                <!-- Double Product End -->
-            </div>
-            <!-- Best Product Activation End -->
-        </div>
-        <!-- Container End -->
-    </div>
-    <!-- Best Product End -->
     <!-- Blog Page Start -->
     <div class="blog-area pb-60">
         <div class="container">
