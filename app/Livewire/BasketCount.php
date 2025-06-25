@@ -13,7 +13,7 @@ class BasketCount extends Component
     #[On('product-add')]
     public function mount()
     {
-        $this->count = sizeof(Auth::user()->basket->products);
+        $this->count = Auth::check() ? sizeof(Auth::user()->basket->products) : 0;
     }
 
     public function render()
