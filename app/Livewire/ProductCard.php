@@ -30,6 +30,7 @@ class ProductCard extends Component
             } else {
                 $basket->products()->attach($id, ['quantity' => $quantity]);
             }
+            $this->dispatch('product-add');
             return back();
 
         } else {

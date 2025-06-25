@@ -2,7 +2,7 @@
 [  Table of contents  ]
 ================================================
 01. General
-02. Page section margin padding 
+02. Page section margin padding
 03. Section title 1
 04. Section title 2
 05. button
@@ -16,7 +16,7 @@
 13. Box Layout
 14. Back to top
 15. Basic margin padding
- 
+
 ======================================
 [ End table content ]
 ======================================*/
@@ -25,13 +25,23 @@
     General
 *************************/
 body {
-    font-family: "Rubik",sans-serif
+    font-family: "Rubik",sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     color: #666666;
 }
 @import url('https://fonts.googleapis.com/css?family=Lily+Script+One|Open+Sans:400,600,700|Rubik:300,400,500,700');
+
+.product-loading{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #22222294;
+}
 .img{
     max-width: 100%;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -69,10 +79,10 @@ input {
     outline: medium none;
     color: #555;
 }
-.uppercase { 
+.uppercase {
     text-transform: uppercase
 }
-.capitalize { 
+.capitalize {
     text-transform: capitalize
 }
 h1,
@@ -80,7 +90,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {   
+h6 {
     font-weight: 500;
     margin-top: 0px;
     font-style: normal;
@@ -93,8 +103,8 @@ h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 a { 
-    color: inherit 
+h6 a {
+    color: inherit
 }
 h1 {
     font-size: 35px;
@@ -826,7 +836,7 @@ input[type="text"]#email-two::-webkit-input-placeholder {
 
 
 /***************************
-    Page section padding 
+    Page section padding
 ****************************/
 .ptb-0 { padding: 0 }
 .ptb-10 { padding: 10px 0 }
@@ -849,7 +859,7 @@ input[type="text"]#email-two::-webkit-input-placeholder {
 .ptb-150 { padding: 150px 0 }
 
 /***************************
-    Page section margin 
+    Page section margin
 ****************************/
 .mtb-0 { margin: 0 }
 .mtb-10 { margin: 10px 0 }
@@ -912,7 +922,7 @@ input[type="text"]#email-two::-webkit-input-placeholder {
     width: 100%;
 }
  /*************************************
-    Background variation set 
+    Background variation set
  **************************************/
 /*colored background*/
  .white-bg { background: #fff; }
@@ -929,7 +939,7 @@ input[type="text"]#email-two::-webkit-input-placeholder {
 
 /*Opacity background*/
  .bg-opacity-black-10:before, .bg-opacity-black-20:before, .bg-opacity-black-30:before, .bg-opacity-black-40:before, .bg-opacity-black-50:before, .bg-opacity-black-60:before, .bg-opacity-black-70:before, .bg-opacity-black-80:before, .bg-opacity-black-90:before,  .bg-opacity-white-10:before,  .bg-opacity-white-20:before,  .bg-opacity-white-30:before,  .bg-opacity-white-40:before,  .bg-opacity-white-50:before,  .bg-opacity-white-60:before,  .bg-opacity-white-70:before,  .bg-opacity-white-80:before,  .bg-opacity-white-90:before{
-    content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; 
+    content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1;
  }
  .bg-opacity-black-10:before {  background: rgba(0, 0, 0, 0.1);}
  .bg-opacity-black-20:before {  background: rgba(0, 0, 0, 0.2);}

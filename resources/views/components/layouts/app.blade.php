@@ -174,7 +174,8 @@
                                             </ul>
                                         </li>
                                         <li><a href=""><i class="fa fa-heart-o"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-basket"></i><span class="cart-counter">2</span></a>
+                                        <li>
+                                            <livewire:basket-count />
                                             <ul class="ht-dropdown main-cart-box">
                                                 <li>
                                                     <!-- Cart Box Start -->
