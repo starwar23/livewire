@@ -17,4 +17,8 @@ class Product extends Model
         'description',
         'category_id'
     ];
+
+    public function baskets() {
+        return $this->belongsToMany(Basket::class)->withPivot('quantity');
+    }
 }
